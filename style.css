@@ -1,0 +1,124 @@
+/* Week 3 Warm Up Activity - Fix My CSS Challenge */
+/* 
+
+
+I've add a few CSS style rules to my style.css external stylesheet, however, when I open index.html in the browser, they are not being applied? 
+
+Can you fix all errors (4) and get my CSS working? 
+
+*Hint - use webDev tools to help you troubleshoot & debug! 
+
+
+*/
+
+/* ---------- TYPOGRAPHY  ------------------ */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300; 
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(#CCAD8F, #7EA3CC, #255C99, #262626, #B3001B);
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+header h1 {
+    font-family: 'Leckerli One', cursive;
+    color: #000;
+    font-size: 60px;
+    margin: 0;
+    padding: 40px 0 0 30px; 
+    text-shadow: 1px 1px 2px #000;
+}
+
+main h1 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/* ---------- LAYOUT & APPEARANCE ------------------ */
+.wrapper{
+    width: 80%;
+}
+.mainWrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.innerWrapper {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    padding: 40px;
+
+}
+
+header {
+    background-image: url('../assets/pexels-mikhail-nilov-6740535.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0;
+}
+img{
+    filter: blur(50px);
+    filter: contrast(200%);
+    width: 20%;
+    height: 35%;
+}
+.wrapper header{
+    width: 90%;
+    text-align: center;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+aside {
+    background-color: #F5F5DC;
+    padding: 20px;
+}
+
+footer p {
+    padding: 0 40px;
+    text-align: right; 
+}
+
+
+/* Responsive Layouts */
+/* Don't worry if this doesn't make sense now - we'll cover responsive layouts later in the semester :) */
+
+@media (max-width: 1499px) {
+    img {
+        width: 100%; 
+    }
+}
+
+
+
+@media (min-width: 1500px) {
+    .innerWrapper {
+        display: flex;
+        align-items: stretch;
+        gap: 60px;
+    }
+
+}
